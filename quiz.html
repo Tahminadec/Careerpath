@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Quiz</title>
+
+</head>
+<body bgcolor="">
+
+Q1.What is 2+3?<br>
+<input type="radio" name="question1" id = "correct1">5<br> 
+<input type="radio" name="question1">43<br>
+<input type="radio" name="question1">43<br>
+<input type="radio" name="question1">23<br>
+
+Q2.What is 6+4?<br>
+<input type="radio" name="question2">31<br> 
+<input type="radio" name="question2">12<br>
+<input type="radio" name="question2" id = "correct2">10<br>
+<input type="radio" name="question2">45<br>
+
+Q3.What 4+5?<br>
+<input type="radio" name="question3">31<br> 
+<input type="radio" name="question3">23<br>
+<input type="radio" name="question3" id = "correct3">9<br>
+<input type="radio" name="question3">3<br>
+<button onclick = "result()"> Submit Quiz</button>
+
+
+
+<script type="text/javascript">
+	function result(){
+    var Score=0;
+    if(document.getelEmentById('correct1').checked)
+    {
+      Score++;
+    }
+    if(document.getElementById('correct2').checked)
+    {
+      Score++;
+    }
+    if(document.getElementById('correct3').checked)
+    {
+      Score++;
+    }
+    
+    document.write("Your score is:"+ Score);
+ 
+}
+</script>
+
+</body>
+</html>
