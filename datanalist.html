@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Finder</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">	
+</head>
+<body>
+	<section id = "Services" class = "py-5">
+        <div class = "container">
+    <div class = "title text-left py-5">  
+<a href="hoynaken.html" class="btn">prev</a>
+<h1>Test your career as a Data Administrator And Data Analyst</h1>
+    <div class = "row g-3">
+   <div class="question">
+   Q9: Do you have strong attention to detail and an analytical mindset?
+     </div>
+    <div>
+      <input type="radio" id="a41" name="question0">
+      <label for="a1">Must be Needed</label>
+    </div>
+    <div>
+      <input type="radio" id="a42" name="question0">
+      <label for="a1">Needed</label>
+    </div>
+    <div>
+      <input type="radio" id="a43" name="question0">
+      <label for="a1">Not needed</label>
+    </div>
+    <div>
+      <input type="radio" id="a44" name="question0">
+      <label for="a1"> Out of this part</label>
+    </div>
+
+    <div class="question">
+  Q10: What is the role of HTML, CSS, and JavaScript in front-end development?
+    </div>
+    <div>
+      <input type="radio" id="a45" name="question1" >
+      <label for="a2">Presentation, Logic</label>
+    </div>
+    <div>
+      <input type="radio" id="a46" name="question1" >
+      <label for="a2">Design, Animation,Database</label>
+    </div>
+        <div>
+      <input type="radio" id="a47" name="question1" >
+      <label for="a2">Structure, Style, Interactivity</label>
+    </div>
+        <div>
+      <input type="radio" id="a48" name="question1" >
+      <label for="a2">Images, Videos, Text</label>
+    </div>
+
+    <div class="question">
+    Q11:What is the Concept of responsive web design and its effect on user experience?
+    </div>
+    <div>
+      <input type="radio" id="a49" name="question2" >
+      <label for="a3">Mobile-Friendly, Slow Loading  </label>
+    </div>
+    <div>
+      <input type="radio" id="a50" name="question2" >
+      <label for="a3">Adaptability, Improved UX</label>
+    </div>
+        <div>
+      <input type="radio" id="a51" name="question2" >
+      <label for="a3">Minimalist Design, Less Content</label>
+    </div>
+        <div>
+      <input type="radio" id="a52" name="question2" >
+      <label for="a3">Flashy Animations, Complex Layouts</label>
+    </div>
+
+    <div class="question">
+    Q12: How to handle authentication and user sessions in a web application?
+    </div>
+    <div>
+      <input type="radio" id="a53" name="question3" >
+      <label for="a4">No Authentication, Plain Text Storage</label>
+    </div>
+    <div>
+      <input type="radio" id="a54" name="question3" >
+      <label for="a4">Synchronous Code, No Sessions</label>
+    </div>
+        <div>
+      <input type="radio" id="a55" name="question3" >
+      <label for="a4">Authentication,JWT Tokens,Cookies</label>
+    </div>
+        <div>
+      <input type="radio" id="a56" name="question3" >
+      <label for="a4">Complex Passwords, No User Data</label>
+    </div>
+
+
+     <button class= "btn" onclick="getResults()">Get Results</button>
+     <a href="cna.html" class="btn">Next quiz</a>
+     <div id="results"></div>
+     <div id="img"></div>
+
+    <script>
+      function getResults() {
+        var score = 0
+        var answerQ9 = document.getElementById('a42')
+        var answerQ10 = document.getElementById('a47')
+        var answerQ11 = document.getElementById('a50')
+        var answerQ12 = document.getElementById('a55')
+       
+
+        if (answerQ9.checked) score = score + 1
+        if (answerQ10.checked) score = score + 1
+        if (answerQ11.checked) score = score + 1
+        if (answerQ12.checked) score = score + 1
+
+        var resultsDiv = document.getElementById('results')
+        resultsDiv.innerHTML = "You scored " + score + " as a Data Administrator And Data Analyst"
+
+      }
+      function clearResults() {
+        var resultsDiv = document.getElementById('results')
+        resultsDiv.innerHTML = ""
+      }
+
+</script>
+
+</div>
+</div>
+</section>
+</body>
+</html>
