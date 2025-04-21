@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Finder</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+  <section id = "Services" class = "py-5">
+        <div class = "container">
+    <div class = "title text-left py-5">  
+<a href="datanalist.html" class="btn">prev</a>
+<h3>Test your career as a Computer Network Architect</h3>
+    <div class = "row g-3">
+      <div class="question">
+  Q13: Focused on a new network system?
+     </div>
+    <div>
+      <input type="radio" id="a41" name="question13">
+      <label for="a1">Yes</label>
+    </div>
+    <div>
+      <input type="radio" id="a42" name="question13">
+      <label for="a1">No</label>
+    </div>
+    <div>
+      <input type="radio" id="a43" name="question13">
+      <label for="a1">Someimes</label>
+    </div>
+    <div>
+      <input type="radio" id="a44" name="question13">
+      <label for="a1">Rarely</label>
+    </div>
+
+    <div class="question">
+  Q14:Invest time in designing a network data system?
+    </div>
+    <div>
+      <input type="radio" id="a45" name="question14" >
+      <label for="a2">Yes</label>
+    </div>
+    <div>
+      <input type="radio" id="a46" name="question14" >
+      <label for="a2">No</label>
+    </div>
+        <div>
+      <input type="radio" id="a47" name="question14" >
+      <label for="a2">Occasionally</label>
+    </div>
+        <div>
+      <input type="radio" id="a48" name="question14" >
+      <label for="a2">Rarely</label>
+    </div>
+
+    <div class="question">
+  Q15:Skilled in digital security?
+    </div>
+    <div>
+      <input type="radio" id="a49" name="question15" >
+      <label for="a3">Yes</label>
+    </div>
+    <div>
+      <input type="radio" id="a50" name="question15" >
+      <label for="a3">No</label>
+    </div>
+        <div>
+      <input type="radio" id="a51" name="question15" >
+      <label for="a3">Somewhat</label>
+    </div>
+        <div>
+      <input type="radio" id="a52" name="question15" >
+      <label for="a3">Learning</label>
+    </div>
+  </div>
+
+  <div class="question">
+  Q16: Expert on network technologies?
+    </div>
+    <div>
+      <input type="radio" id="a53" name="question16" >
+      <label for="a4">Yes</label>
+    </div>
+    <div>
+      <input type="radio" id="a54" name="question16" >
+      <label for="a4">No</label>
+    </div>
+        <div>
+      <input type="radio" id="a55" name="question16" >
+      <label for="a4">Some Knowledge</label>
+    </div>
+        <div>
+      <input type="radio" id="a56" name="question16" >
+      <label for="a4">Limited Knowledge</label>
+    </div>
+    
+
+<button class= "btn" onclick="getResults()">Get Results</button>
+    <button class= "btn" onclick="clearResults()">Clear Results</button>
+    <div id="results"></div>
+    <div id="img"></div>
+
+    <script>
+      function getResults() {
+        var score = 0
+        var answerQ13 = document.getElementById('a41')
+        var answerQ14 = document.getElementById('a45')
+        var answerQ15 = document.getElementById('a49')
+        var answerQ16 = document.getElementById('a53')
+        
+
+        if (answerQ13.checked) score = score + 1
+        if (answerQ14.checked) score = score + 1
+        if (answerQ15.checked) score = score + 1
+        if (answerQ16.checked) score = score + 1
+
+        var resultsDiv = document.getElementById('results')
+        resultsDiv.innerHTML = "You scored " + score + " as a Computer Network Architect"
+
+      }
+      function clearResults() {
+        var resultsDiv = document.getElementById('results')
+        resultsDiv.innerHTML = ""
+      }
+
+
+    </script> 
+
+
+</div>
+</section>
+</body>
+</html>
