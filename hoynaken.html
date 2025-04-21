@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Finder</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+  <section id = "Services" class = "py-5">
+        <div class = "container">
+    <div class = "title text-left py-5">  
+<a href="index.html" class="btn">prev</a>
+<h1>Test your career as a Full Stack Software Developer</h1>
+    <div class = "row g-3">
+      <div class="question">
+  Q5: Do you have strong attention to detail and an analytical mindset?
+     </div>
+    <div>
+      <input type="radio" id="a11" name="question5">
+      <label for="a1">Must be Needed</label>
+    </div>
+    <div>
+      <input type="radio" id="a12" name="question5">
+      <label for="a1">Needed</label>
+    </div>
+    <div>
+      <input type="radio" id="a13" name="question5">
+      <label for="a1">Not needed</label>
+    </div>
+    <div>
+      <input type="radio" id="a14" name="question5">
+      <label for="a1"> Out of this part</label>
+    </div>
+
+    <div class="question">
+  Q6: What is the role of HTML, CSS, and JavaScript in front-end development?
+    </div>
+    <div>
+      <input type="radio" id="a15" name="question6" >
+      <label for="a2">Presentation, Logic</label>
+    </div>
+    <div>
+      <input type="radio" id="a16" name="question6" >
+      <label for="a2">Design, Animation,Database</label>
+    </div>
+        <div>
+      <input type="radio" id="a17" name="question6" >
+      <label for="a2">Structure, Style, Interactivity</label>
+    </div>
+        <div>
+      <input type="radio" id="a18" name="question6" >
+      <label for="a2">Images, Videos, Text</label>
+    </div>
+    <div class="question">
+  Q7:What is the Concept of responsive web design and its effect on user experience?
+    </div>
+    <div>
+      <input type="radio" id="a19" name="question7" >
+      <label for="a3">Mobile-Friendly, Slow Loading  </label>
+    </div>
+    <div>
+      <input type="radio" id="a20" name="question7" >
+      <label for="a3">Adaptability, Improved UX</label>
+    </div>
+        <div>
+      <input type="radio" id="a21" name="question2" >
+      <label for="a3">Minimalist Design, Less Content</label>
+    </div>
+        <div>
+      <input type="radio" id="a22" name="question7" >
+      <label for="a3">Flashy Animations, Complex Layouts</label>
+    </div>
+    <div class="question">
+   Q8: How to handle authentication and user sessions in a web application?
+    </div>
+    <div>
+      <input type="radio" id="a23" name="question8" >
+      <label for="a4">No Authentication, Plain Text Storage</label>
+    </div>
+    <div>
+      <input type="radio" id="a24" name="question8" >
+      <label for="a4">Synchronous Code, No Sessions</label>
+    </div>
+        <div>
+      <input type="radio" id="a25" name="question8" >
+      <label for="a4">OAuth, JWT Tokens, Cookies</label>
+    </div>
+        <div>
+      <input type="radio" id="a26" name="question8" >
+      <label for="a4">Complex Passwords, No User Data</label>
+    </div>
+
+
+        
+
+    <button class= "btn" onclick="getResults()">Get Results</button>
+    <a href="datanalist.html" class="btn">Next quiz</a>
+    <div id="results"></div>
+    <div id="img"></div>
+
+    <script>
+      function getResults() {
+        var score = 0
+        var answerQ5 = document.getElementById('a11')
+        var answerQ6 = document.getElementById('a17')
+        var answerQ7 = document.getElementById('a20')
+        var answerQ8 = document.getElementById('a25')
+      
+
+        if (answerQ5.checked) score = score + 1
+        if (answerQ6.checked) score = score + 1
+        if (answerQ7.checked) score = score + 1
+        if (answerQ8.checked) score = score + 1
+
+        var resultsDiv = document.getElementById('results')
+        resultsDiv.innerHTML = "You scored " + score + "out of 4" +" as a Full Stack Software Developer"
+
+      }
+      function clearResults() {
+        var resultsDiv = document.getElementById('results')
+        resultsDiv.innerHTML = ""
+      }
+
+
+    </script> 
+  
+</div>
+</section>
+</body>
+</html>
